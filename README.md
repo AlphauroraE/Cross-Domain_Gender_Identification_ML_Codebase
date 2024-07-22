@@ -1,4 +1,4 @@
-https://github.com/AlphauroraE/Cross-Domain_Gender_Identification_ML_Codebase/blob/main/README.md# Cross-Domain_Gender_Identification_ML_Codebase
+# Cross-Domain_Gender_Identification_ML_Codebase
 
 When using code from this repository, please credit both Qidi J. Wang and Alec G. Moore.
 
