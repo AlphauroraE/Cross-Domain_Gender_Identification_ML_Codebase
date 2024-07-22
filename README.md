@@ -48,5 +48,5 @@ Instructions:
 
 5. After creating the dictionaries, call either runExperimentsScene or runExperimentsHead to execute the experiments. Note that the 5th parameter should be either 'p' or 'v' for position or velocity experiments.
 
-    ex. ml_codebase.runExperimentsEfficient(train_info, test1_info, test2_info, test3_info, 'p', experiment_info)
+    ex. ml_codebase.runExperimentsScene(train_info, test1_info, test2_info, test3_info, 'p', experiment_info)
 
