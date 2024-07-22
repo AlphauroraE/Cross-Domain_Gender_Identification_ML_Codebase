@@ -1,4 +1,4 @@
-# Cross-Domain_Gender_Identification_ML_Codebase
+https://github.com/AlphauroraE/Cross-Domain_Gender_Identification_ML_Codebase/blob/main/README.md# Cross-Domain_Gender_Identification_ML_Codebase
 
 When using code from this repository, please credit both Qidi J. Wang and Alec G. Moore.
 
@@ -18,7 +18,9 @@ Instructions:
 
     ex. ml_codebase.cucumberIntoJar(fast_a_raw,pickle_filename)
 
-4. The experiments require certain parameters. To save space, specify them in dictionaries of the below specified formats:
+4. We defined our runExperiment functions to work so that the machine learning models would train once on the data specified in train_info, and then test on the data specified in test1_info, test2_info, and test3_info. This saves time by avoiding training on the same data 3 times. For example, calling runExperimentsScene one time can produce the experiment results for train/test pairs: FAST A -> FAST B, FAST A -> Alyx A, and FAST A -> Alyx B.
+
+   The experiments require certain parameters. To save space, specify them in dictionaries of the below specified formats:
 
     - train_info = {'raw': var, 'path': var, 'fora': '', 'set': ''}
     - test1_info = {'raw': var, 'path': var, 'fora': '', 'set': '', 'filename': ''}
@@ -26,7 +28,7 @@ Instructions:
     - test3_info = {'raw': var, 'path': var, 'fora': '', 'set': '', 'filename': ''}
     - experiment_info = {'relative_info': '', 'posorvel_info': '', 'subsample_info': ''}
 
-    We defined our runExperiment functions to work so that the machine learning models would train once on the data specified in train_info, and then test on the data specified in test1_info, test2_info, and test3_info. This saves time by avoiding training on the same data 3 times. For example, calling runExperimentsScene one time can produce the experiment results for train/test pairs: FAST A -> FAST B, FAST A -> Alyx A, and FAST A -> Alyx B.
+    Here is an explanation of each key of the dictionary:
 
 
     - 'raw' is the variable containing the raw data, like fast_a_raw
@@ -46,7 +48,7 @@ Instructions:
 
 
 
-5. After creating the dictionaries, call either runExperimentsScene or runExperimentsHead to execute the experiments. Note that the 5th parameter should be either 'p' or 'v' for position or velocity experiments.
+6. After creating the dictionaries, call either runExperimentsScene or runExperimentsHead to execute the experiments. Note that the 5th parameter should be either 'p' or 'v' for position or velocity experiments.
 
     ex. ml_codebase.runExperimentsScene(train_info, test1_info, test2_info, test3_info, 'p', experiment_info)
 
