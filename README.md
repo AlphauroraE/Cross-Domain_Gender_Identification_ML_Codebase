@@ -34,10 +34,10 @@ Instructions:
     - 'raw' is the variable containing the raw data, like fast_a_raw
     - 'path' is the variable containing the path to the folder containing the data
     - 'fora' is short for 'fast or alyx'. This should be a string: either 'FAST' or 'Alyx' to ensure the corresponding functions are called correctly
-    - 'set' is a string for the name of the set you are using. This is used for consistent naming conventions. The options are typically 'FASTA', 'FASTB', 'AlyxA', and 'AlyxB'
-    - 'filename' is also a string for naming conventions. This should describe the experiment you are conducting. The format is typically 'trainingset-testingset_SceneorHead_PosorVel'
+    - 'set' is a string to describe the name of the set you are using. This is used for consistent naming conventions. The options are typically 'FASTA', 'FASTB', 'AlyxA', and 'AlyxB'
+    - 'filename' is also a string for the purpose of naming conventions. This should describe the experiment you are conducting. The format is typically 'trainingset-testingset_SceneorHead_PosorVel'. See example below.
     - 'relative_info' is a string for either 'Scene' or 'Head' relative experiments
-    - 'posorvel_info' is a string that is either 'Pos' or 'Vel'
+    - 'posorvel_info' is a string that is either 'Pos' or 'Vel' for position or velocity experiments
     - 'subsample_info' is a string that can be kept blank, but for velocity experiments you can include information like '6Hz' for subsampled rate of the data
 
     ex. train_info = {'raw': fast_a_raw, 'path': fast_a_path, 'fora': 'FAST', 'set': 'FASTA'}
