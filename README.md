@@ -1,6 +1,6 @@
 # Cross-Domain_Gender_Identification_ML_Codebase
 
-When using code from this repository, please credit both Qidi J. Wang and Alec G. Moore.
+When using code from this repository, please credit Qidi J. Wang and Alec G. Moore.
 
 This repository contains the codebase for replicating the machine learning experiments in the paper "Cross-Domain Gender Identification Using VR Tracking Data" by Wang et al. [doi].
 
